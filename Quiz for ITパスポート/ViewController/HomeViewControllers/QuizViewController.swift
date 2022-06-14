@@ -48,17 +48,17 @@ class QuizViewController: UIViewController {
         quizCountLabel.text = "\(index + 1)/\(quizArray.count)"
     }
     
-    // データを送る
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toExVC" {
-            guard let explanationData = segue.destination as? ExplanationViewController else { return }
-            let data = quiz.explanation
-            explanationData.exData = data
-        } else {
-            print("error")
-        }
-    }
-    
+    // データを送る segueで繋いでないことから使えない
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "toExVC" {
+//            guard let explanationData = segue.destination as? ExplanationViewController else { return }
+//            let data = quiz.explanation
+//            explanationData.exData = data
+//        } else {
+//            print("error")
+//        }
+//    }
+//    
     
     // ボタンタップ時の動き
     @IBAction func answerButtonDidTap(_ sender:UIButton) {
@@ -68,7 +68,8 @@ class QuizViewController: UIViewController {
             print("不正解")
         }
         let alert = ExplanationViewController()
-        print(alert.exData)
+        alert.exData = quiz.explanation
+        alert.iscorrect = sender.tag == quiz.answer
         self.present(alert, animated: true)
     }
     
@@ -81,6 +82,7 @@ class QuizViewController: UIViewController {
         answerButton3.setTitle(quiz.options[2], for: .normal)
         answerButton4.setTitle(quiz.options[3], for: .normal)
         quizCountLabel.text = "\(index + 1)/\(quizArray.count)"
+        
     }
     
    

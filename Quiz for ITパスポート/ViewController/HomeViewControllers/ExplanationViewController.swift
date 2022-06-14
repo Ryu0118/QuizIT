@@ -10,8 +10,13 @@ import SnapKit
 
 class ExplanationViewController: UIViewController, UIViewControllerTransitioningDelegate {
     
-    // データ受け取り
-    var exData = ""
+    // データ受け取り及び表示させる
+    var exData = "" {
+        didSet {
+            explanationTextLabel.text = exData
+        }
+    }
+    
     
     //土台のview
     lazy var baseView: UIView = {
@@ -54,21 +59,34 @@ class ExplanationViewController: UIViewController, UIViewControllerTransitioning
     
     lazy var explanationTextLabel: UILabel = {
         let explanationTextLabel = UILabel()
-        explanationTextLabel.text = exData
+//        explanationTextLabel.text = exData
         return explanationTextLabel
     }()
     
-    lazy var correctImage: UIImageView = {
-        let correctImage = UIImageView()
-        correctImage.image = UIImage(named: "correct")
-        return correctImage
+    lazy var judgeImage: UIImageView = {
+        let judgeImage = UIImageView()
+        if iscorrect {
+            judgeImage.image = UIImage(named: "correct")
+        } else {
+            judgeImage.image = UIImage(named: "incorrect")
+        }
+        return judgeImage
     }()
     
-    lazy var incorrectImage: UIImageView = {
-        let incorrectImage = UIImageView()
-        incorrectImage.image = UIImage(named: "incorrect")
-        return incorrectImage
-    }()
+    // これだと二つ同時に画面表示されてしまう
+//    lazy var correctImage: UIImageView = {
+//        let correctImage = UIImageView()
+//        correctImage.image = UIImage(named: "correct")
+//        return correctImage
+//    }()
+//
+//    lazy var incorrectImage: UIImageView = {
+//        let incorrectImage = UIImageView()
+//        incorrectImage.image = UIImage(named: "incorrect")
+//        return incorrectImage
+//    }()
+    
+     var iscorrect: Bool!
     
     
     // ？
@@ -88,18 +106,19 @@ class ExplanationViewController: UIViewController, UIViewControllerTransitioning
     override func viewDidLoad() {
         super.viewDidLoad()
         layoutView()
-        print(exData)
     }
     
     //layout
     func layoutView() {
+        
         view.addSubview(baseView)
         view.addSubview(alertView)
         alertView.addSubview(button1)
         alertView.addSubview(button2)
         alertView.addSubview(nextButton)
-        alertView.addSubview(correctImage)
-        alertView.addSubview(incorrectImage)
+        alertView.addSubview(judgeImage)
+//        alertView.addSubview(correctImage) = 上記に記載
+//        alertView.addSubview(incorrectImage)
         alertView.addSubview(explanationTextLabel)
         
         baseView.snp.makeConstraints{
@@ -134,7 +153,18 @@ class ExplanationViewController: UIViewController, UIViewControllerTransitioning
             $0.width.equalToSuperview().multipliedBy(0.9)
             $0.centerY.centerX.equalToSuperview()
         }
+        
+        judgeImage.snp.makeConstraints{
+            $0.height.equalToSuperview()
+        }
+        
+        nextButton.addTarget(self, action: #selector(self.didTap(_ :)), for: .touchUpInside)
     }
+    
+    @objc func didTap(_ sender: UIButton) {
+        self.dismiss(animated: true)
+    }
+    
     
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return AlertAnimation(true)
