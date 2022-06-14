@@ -276,21 +276,6 @@
             </objects>
             <point key="canvasLocation" x="1995.6521739130437" y="1567.6339285714284"/>
         </scene>
-        <!--Explanation View Controller-->
-        <scene sceneID="gHa-SM-RGs">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="H3w-dC-Xsd" customClass="ExplanationViewController" customModule="Quiz_for_ITハ_スホ_ート" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="PJo-GV-gyE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="1sY-Fh-8xu"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vji-3z-K1L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2880" y="1577"/>
-        </scene>
         <!--Prepare Quiz View Controller-->
         <scene sceneID="LXx-FD-QZn">
             <objects>
@@ -515,7 +500,7 @@
                         <outlet property="answerButton4" destination="pF0-SS-CCu" id="Ssx-re-tRC"/>
                         <outlet property="quizCountLabel" destination="gVa-Gn-Mtu" id="TEh-zF-Dwr"/>
                         <outlet property="quizTextView" destination="vHV-OE-3Ex" id="UQg-QG-ehh"/>
-                        <segue destination="H3w-dC-Xsd" kind="presentation" identifier="toExVC" id="Jk1-aC-1tc"/>
+                        <segue destination="QVU-Qc-U9T" kind="presentation" identifier="toResultVC" id="osh-wC-BXA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aI7-7p-kG7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -525,7 +510,7 @@
         <!--Quiz Result View Controller-->
         <scene sceneID="euP-FG-8WD">
             <objects>
-                <viewController id="QVU-Qc-U9T" customClass="QuizResultViewController" customModule="Quiz_for_ITハ_スホ_ート" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="QVU-Qc-U9T" customClass="QuizResultViewController" customModule="Quiz_for_ITハ_スホ_ート" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mKm-Hh-4hd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -535,6 +520,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="分野選択画面へ"/>
+                                <connections>
+                                    <action selector="didTapTopButton:" destination="QVU-Qc-U9T" eventType="touchUpInside" id="lc6-fG-Bvz"/>
+                                </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="keu-8u-YCf">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>

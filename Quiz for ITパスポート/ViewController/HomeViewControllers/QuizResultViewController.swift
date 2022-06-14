@@ -15,7 +15,11 @@ class QuizResultViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func didTapTopButton(_ sender: Any) {
+        self.presentingViewController?.presentingViewController?
+            .presentingViewController?
+            .dismiss(animated: true)
+    }
     /*
     // MARK: - Navigation
 

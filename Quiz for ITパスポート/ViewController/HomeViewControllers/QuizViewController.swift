@@ -69,6 +69,7 @@ class QuizViewController: UIViewController {
         }
         let alert = ExplanationViewController()
         alert.exData = quiz.explanation
+        alert.delegate = self
         alert.iscorrect = sender.tag == quiz.answer
         self.present(alert, animated: true)
     }
@@ -98,4 +99,24 @@ class QuizViewController: UIViewController {
     }
     */
 
+}
+
+extension QuizViewController: ExplanationViewControllerDelegate {
+    
+    func nextButtonDidTap(_ viewController: ExplanationViewController) {
+            index += 1
+        if  quizArray.count > index {
+            quiz = quizArray[index]
+            quizTextView.text = quiz.question
+            answerButton1.setTitle(quiz.options[0], for: .normal)
+            answerButton2.setTitle(quiz.options[1], for: .normal)
+            answerButton3.setTitle(quiz.options[2], for: .normal)
+            answerButton4.setTitle(quiz.options[3], for: .normal)
+            quizCountLabel.text = "\(index + 1)/\(quizArray.count)"
+        } else {
+            performSegue(withIdentifier: "toResultVC", sender: nil)
+        }
+        
+    }
+    
 }

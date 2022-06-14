@@ -8,7 +8,13 @@
 import UIKit
 import SnapKit
 
+protocol ExplanationViewControllerDelegate: AnyObject {
+    func nextButtonDidTap(_ viewController: ExplanationViewController)
+}
+
 class ExplanationViewController: UIViewController, UIViewControllerTransitioningDelegate {
+    
+    weak var delegate: ExplanationViewControllerDelegate?
     
     // データ受け取り及び表示させる
     var exData = "" {
@@ -158,11 +164,14 @@ class ExplanationViewController: UIViewController, UIViewControllerTransitioning
             $0.height.equalToSuperview()
         }
         
-        nextButton.addTarget(self, action: #selector(self.didTap(_ :)), for: .touchUpInside)
+        nextButton.addTarget(self, action: #selector(self.closeDidTap(_ :)), for: .touchUpInside)
     }
     
-    @objc func didTap(_ sender: UIButton) {
-        self.dismiss(animated: true)
+    @objc func closeDidTap(_ sender: UIButton) {
+        //print("tapされました")
+        self.dismiss(animated: true) {
+            self.delegate?.nextButtonDidTap(self)
+        }
     }
     
     
