@@ -6,6 +6,8 @@ target 'Quiz for ITパスポート' do
   use_frameworks!
  pod 'Parchment', '~> 3.2'
  pod 'Charts'
+ pod 'SwiftyJSON'
+ pod 'SnapKit'
 
   # Pods for Quiz for ITパスポート
 

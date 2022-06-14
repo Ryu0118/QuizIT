@@ -56,6 +56,7 @@ open class PagingTitleCell: PagingCell {
     }
 
     open func configure() {
+        titleLabel.adjustsFontSizeToFitWidth = true
         contentView.addSubview(titleLabel)
         contentView.isAccessibilityElement = true
         titleLabel.translatesAutoresizingMaskIntoConstraints = false

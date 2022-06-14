@@ -8,15 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B23425FC2848C88C000DACB9 /* FiledSpecificViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23425FB2848C88C000DACB9 /* FiledSpecificViewController.swift */; };
-		B23426022848CBAE000DACB9 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23426012848CBAE000DACB9 /* QuizViewController.swift */; };
-		B23426062848D4AF000DACB9 /* quiz1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B23426052848D4AF000DACB9 /* quiz1.csv */; };
-		B234260E28490825000DACB9 /* customExplnationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B234260D28490825000DACB9 /* customExplnationView.xib */; };
 		B234263E284A199F000DACB9 /* QuizResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234263D284A199F000DACB9 /* QuizResultViewController.swift */; };
 		B2342641284A509C000DACB9 /* BookMarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2342640284A509C000DACB9 /* BookMarkViewController.swift */; };
 		B2342643284A6ED9000DACB9 /* PrepareQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2342642284A6ED9000DACB9 /* PrepareQuizViewController.swift */; };
-		B2342645284A6FB5000DACB9 /* quiz2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B2342644284A6FB5000DACB9 /* quiz2.csv */; };
-		B2342647284A7016000DACB9 /* quiz3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B2342646284A7016000DACB9 /* quiz3.csv */; };
-		B2342649284A706B000DACB9 /* quiz4.csv in Resources */ = {isa = PBXBuildFile; fileRef = B2342648284A706B000DACB9 /* quiz4.csv */; };
 		B2342674284CFF48000DACB9 /* FieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2342673284CFF48000DACB9 /* FieldViewController.swift */; };
 		B2745D0728471CED00C11CD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2745D0628471CED00C11CD5 /* AppDelegate.swift */; };
 		B2745D0928471CED00C11CD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2745D0828471CED00C11CD5 /* SceneDelegate.swift */; };
@@ -25,9 +19,23 @@
 		B2745D1328471CED00C11CD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2745D1128471CED00C11CD5 /* LaunchScreen.storyboard */; };
 		B2745D1B284727D700C11CD5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2745D1A284727D700C11CD5 /* HomeViewController.swift */; };
 		B2745D1E284729D900C11CD5 /* SelectLevelCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2745D1D284729D900C11CD5 /* SelectLevelCustomButton.swift */; };
+		B2AE94B92854B32D00BF5995 /* ExtensionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AE94B82854B32D00BF5995 /* ExtensionButton.swift */; };
+		B2AE94BB2854EAC100BF5995 /* TestSelectButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2AE94BA2854EAC100BF5995 /* TestSelectButton.xib */; };
+		B2AE94BF2854EB7700BF5995 /* TestSelectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AE94BE2854EB7700BF5995 /* TestSelectButton.swift */; };
+		B2AE94C12855E95C00BF5995 /* ExplanationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AE94C02855E95C00BF5995 /* ExplanationViewController.swift */; };
+		B2AE94C428589EAA00BF5995 /* ButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AE94C328589EAA00BF5995 /* ButtonCustom.swift */; };
 		B2BFFC9C285043D500FCD317 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BFFC9B285043D500FCD317 /* SettingViewController.swift */; };
 		B2BFFCA228506B3000FCD317 /* TestHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BFFCA128506B3000FCD317 /* TestHomeViewController.swift */; };
 		B2BFFCA42850768A00FCD317 /* DetailDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BFFCA32850768A00FCD317 /* DetailDataViewController.swift */; };
+		B2BFFCA62850AFA700FCD317 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BFFCA52850AFA700FCD317 /* QuizViewController.swift */; };
+		B2BFFCAA28532D8500FCD317 /* SettingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BFFCA928532D8500FCD317 /* SettingDetailViewController.swift */; };
+		B2BFFCAC2853386E00FCD317 /* SettingDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BFFCAB2853386E00FCD317 /* SettingDataViewController.swift */; };
+		B2BFFCAE28547D5C00FCD317 /* question.py in Resources */ = {isa = PBXBuildFile; fileRef = B2BFFCAD28547D5C00FCD317 /* question.py */; };
+		B2BFFCB028547D6300FCD317 /* main.py in Resources */ = {isa = PBXBuildFile; fileRef = B2BFFCAF28547D6300FCD317 /* main.py */; };
+		B2BFFCB228547D6C00FCD317 /* template.txt in Resources */ = {isa = PBXBuildFile; fileRef = B2BFFCB128547D6C00FCD317 /* template.txt */; };
+		B2BFFCB528547F2200FCD317 /* template.json in Resources */ = {isa = PBXBuildFile; fileRef = B2BFFCB428547F2200FCD317 /* template.json */; };
+		B2BFFCB92854870E00FCD317 /* FieldSelectButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2BFFCB82854870E00FCD317 /* FieldSelectButton.xib */; };
+		B2BFFCBB28548B9D00FCD317 /* FIledSelectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BFFCBA28548B9D00FCD317 /* FIledSelectButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,15 +43,9 @@
 		9181DEA4126D11E18F56D561 /* Pods-Quiz for ITパスポート.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quiz for ITパスポート.release.xcconfig"; path = "Target Support Files/Pods-Quiz for ITパスポート/Pods-Quiz for ITパスポート.release.xcconfig"; sourceTree = "<group>"; };
 		9B46F7F37B1EBA7320B926C9 /* Pods_Quiz_for_IT_______.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Quiz_for_IT_______.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B23425FB2848C88C000DACB9 /* FiledSpecificViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiledSpecificViewController.swift; sourceTree = "<group>"; };
-		B23426012848CBAE000DACB9 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
-		B23426052848D4AF000DACB9 /* quiz1.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz1.csv; sourceTree = "<group>"; };
-		B234260D28490825000DACB9 /* customExplnationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customExplnationView.xib; sourceTree = "<group>"; };
 		B234263D284A199F000DACB9 /* QuizResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResultViewController.swift; sourceTree = "<group>"; };
 		B2342640284A509C000DACB9 /* BookMarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkViewController.swift; sourceTree = "<group>"; };
 		B2342642284A6ED9000DACB9 /* PrepareQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareQuizViewController.swift; sourceTree = "<group>"; };
-		B2342644284A6FB5000DACB9 /* quiz2.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz2.csv; sourceTree = "<group>"; };
-		B2342646284A7016000DACB9 /* quiz3.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz3.csv; sourceTree = "<group>"; };
-		B2342648284A706B000DACB9 /* quiz4.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz4.csv; sourceTree = "<group>"; };
 		B2342673284CFF48000DACB9 /* FieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldViewController.swift; sourceTree = "<group>"; };
 		B2745D0328471CED00C11CD5 /* Quiz for ITパスポート.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quiz for ITパスポート.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2745D0628471CED00C11CD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,9 +56,23 @@
 		B2745D1428471CED00C11CD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2745D1A284727D700C11CD5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B2745D1D284729D900C11CD5 /* SelectLevelCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLevelCustomButton.swift; sourceTree = "<group>"; };
+		B2AE94B82854B32D00BF5995 /* ExtensionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionButton.swift; sourceTree = "<group>"; };
+		B2AE94BA2854EAC100BF5995 /* TestSelectButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestSelectButton.xib; sourceTree = "<group>"; };
+		B2AE94BE2854EB7700BF5995 /* TestSelectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSelectButton.swift; sourceTree = "<group>"; };
+		B2AE94C02855E95C00BF5995 /* ExplanationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanationViewController.swift; sourceTree = "<group>"; };
+		B2AE94C328589EAA00BF5995 /* ButtonCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCustom.swift; sourceTree = "<group>"; };
 		B2BFFC9B285043D500FCD317 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		B2BFFCA128506B3000FCD317 /* TestHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHomeViewController.swift; sourceTree = "<group>"; };
 		B2BFFCA32850768A00FCD317 /* DetailDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailDataViewController.swift; sourceTree = "<group>"; };
+		B2BFFCA52850AFA700FCD317 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		B2BFFCA928532D8500FCD317 /* SettingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingDetailViewController.swift; sourceTree = "<group>"; };
+		B2BFFCAB2853386E00FCD317 /* SettingDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingDataViewController.swift; sourceTree = "<group>"; };
+		B2BFFCAD28547D5C00FCD317 /* question.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = question.py; sourceTree = "<group>"; };
+		B2BFFCAF28547D6300FCD317 /* main.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = main.py; sourceTree = "<group>"; };
+		B2BFFCB128547D6C00FCD317 /* template.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = template.txt; sourceTree = "<group>"; };
+		B2BFFCB428547F2200FCD317 /* template.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = template.json; sourceTree = "<group>"; };
+		B2BFFCB82854870E00FCD317 /* FieldSelectButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FieldSelectButton.xib; sourceTree = "<group>"; };
+		B2BFFCBA28548B9D00FCD317 /* FIledSelectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIledSelectButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,38 +101,12 @@
 				B2745D1A284727D700C11CD5 /* HomeViewController.swift */,
 				B23425FB2848C88C000DACB9 /* FiledSpecificViewController.swift */,
 				B2342642284A6ED9000DACB9 /* PrepareQuizViewController.swift */,
-				B23426012848CBAE000DACB9 /* QuizViewController.swift */,
+				B2BFFCA52850AFA700FCD317 /* QuizViewController.swift */,
+				B2AE94C02855E95C00BF5995 /* ExplanationViewController.swift */,
 				B234263D284A199F000DACB9 /* QuizResultViewController.swift */,
 				B2342673284CFF48000DACB9 /* FieldViewController.swift */,
 			);
 			path = HomeViewControllers;
-			sourceTree = "<group>";
-		};
-		B234264A284A708B000DACB9 /* quiz.csv */ = {
-			isa = PBXGroup;
-			children = (
-				B2342675284D014C000DACB9 /* basic */,
-				B23426052848D4AF000DACB9 /* quiz1.csv */,
-				B2342644284A6FB5000DACB9 /* quiz2.csv */,
-				B2342646284A7016000DACB9 /* quiz3.csv */,
-				B2342648284A706B000DACB9 /* quiz4.csv */,
-			);
-			path = quiz.csv;
-			sourceTree = "<group>";
-		};
-		B2342675284D014C000DACB9 /* basic */ = {
-			isa = PBXGroup;
-			children = (
-				B2342676284D0164000DACB9 /* 仮分野 */,
-			);
-			path = basic;
-			sourceTree = "<group>";
-		};
-		B2342676284D0164000DACB9 /* 仮分野 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "仮分野";
 			sourceTree = "<group>";
 		};
 		B2745CFA28471CED00C11CD5 = {
@@ -140,15 +130,16 @@
 		B2745D0528471CED00C11CD5 /* Quiz for ITパスポート */ = {
 			isa = PBXGroup;
 			children = (
+				B2AE94B72854B31300BF5995 /* Extension */,
+				B2BFFCB72854867C00FCD317 /* ViewController */,
+				B2BFFCB62854866F00FCD317 /* View */,
+				B2BFFCAD28547D5C00FCD317 /* question.py */,
+				B2BFFCAF28547D6300FCD317 /* main.py */,
+				B2BFFCB128547D6C00FCD317 /* template.txt */,
+				B2BFFCB428547F2200FCD317 /* template.json */,
 				B2745D0628471CED00C11CD5 /* AppDelegate.swift */,
 				B2745D0828471CED00C11CD5 /* SceneDelegate.swift */,
-				B234263F284A1BF4000DACB9 /* HomeViewControllers */,
-				B2BFFC9B285043D500FCD317 /* SettingViewController.swift */,
-				B2BFFCA128506B3000FCD317 /* TestHomeViewController.swift */,
-				B2BFFCA32850768A00FCD317 /* DetailDataViewController.swift */,
-				B2342640284A509C000DACB9 /* BookMarkViewController.swift */,
 				B2745D0C28471CED00C11CD5 /* Main.storyboard */,
-				B2745D1C284729B000C11CD5 /* objectCustom */,
 				B2745D0F28471CED00C11CD5 /* Assets.xcassets */,
 				B2745D1128471CED00C11CD5 /* LaunchScreen.storyboard */,
 				B2745D1428471CED00C11CD5 /* Info.plist */,
@@ -156,14 +147,47 @@
 			path = "Quiz for ITパスポート";
 			sourceTree = "<group>";
 		};
-		B2745D1C284729B000C11CD5 /* objectCustom */ = {
+		B2AE94B72854B31300BF5995 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				B2745D1D284729D900C11CD5 /* SelectLevelCustomButton.swift */,
-				B234260D28490825000DACB9 /* customExplnationView.xib */,
-				B234264A284A708B000DACB9 /* quiz.csv */,
+				B2AE94B82854B32D00BF5995 /* ExtensionButton.swift */,
 			);
-			path = objectCustom;
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B2AE94C228572FB200BF5995 /* SettingViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B2BFFC9B285043D500FCD317 /* SettingViewController.swift */,
+				B2BFFCA928532D8500FCD317 /* SettingDetailViewController.swift */,
+				B2BFFCAB2853386E00FCD317 /* SettingDataViewController.swift */,
+			);
+			path = SettingViewControllers;
+			sourceTree = "<group>";
+		};
+		B2BFFCB62854866F00FCD317 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2BFFCB82854870E00FCD317 /* FieldSelectButton.xib */,
+				B2BFFCBA28548B9D00FCD317 /* FIledSelectButton.swift */,
+				B2745D1D284729D900C11CD5 /* SelectLevelCustomButton.swift */,
+				B2AE94BA2854EAC100BF5995 /* TestSelectButton.xib */,
+				B2AE94BE2854EB7700BF5995 /* TestSelectButton.swift */,
+				B2AE94C328589EAA00BF5995 /* ButtonCustom.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2BFFCB72854867C00FCD317 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B234263F284A1BF4000DACB9 /* HomeViewControllers */,
+				B2AE94C228572FB200BF5995 /* SettingViewControllers */,
+				B2BFFCA128506B3000FCD317 /* TestHomeViewController.swift */,
+				B2BFFCA32850768A00FCD317 /* DetailDataViewController.swift */,
+				B2342640284A509C000DACB9 /* BookMarkViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		FBED703BA7F6439A0296D934 /* Frameworks */ = {
@@ -182,6 +206,7 @@
 			buildConfigurationList = B2745D1728471CED00C11CD5 /* Build configuration list for PBXNativeTarget "Quiz for ITパスポート" */;
 			buildPhases = (
 				7763B934A3FDB8F0C99AD382 /* [CP] Check Pods Manifest.lock */,
+				B2BFFCB328547D8A00FCD317 /* ShellScript */,
 				B2745CFF28471CED00C11CD5 /* Sources */,
 				B2745D0028471CED00C11CD5 /* Frameworks */,
 				B2745D0128471CED00C11CD5 /* Resources */,
@@ -235,13 +260,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2342649284A706B000DACB9 /* quiz4.csv in Resources */,
-				B234260E28490825000DACB9 /* customExplnationView.xib in Resources */,
+				B2BFFCB528547F2200FCD317 /* template.json in Resources */,
 				B2745D1328471CED00C11CD5 /* LaunchScreen.storyboard in Resources */,
-				B2342645284A6FB5000DACB9 /* quiz2.csv in Resources */,
-				B23426062848D4AF000DACB9 /* quiz1.csv in Resources */,
-				B2342647284A7016000DACB9 /* quiz3.csv in Resources */,
 				B2745D1028471CED00C11CD5 /* Assets.xcassets in Resources */,
+				B2BFFCB028547D6300FCD317 /* main.py in Resources */,
+				B2BFFCAE28547D5C00FCD317 /* question.py in Resources */,
+				B2AE94BB2854EAC100BF5995 /* TestSelectButton.xib in Resources */,
+				B2BFFCB92854870E00FCD317 /* FieldSelectButton.xib in Resources */,
+				B2BFFCB228547D6C00FCD317 /* template.txt in Resources */,
 				B2745D0E28471CED00C11CD5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +317,23 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
 		};
+		B2BFFCB328547D8A00FCD317 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"/usr/bin/python3\" \"/Users/kamijo/MyApp/Quiz for ITパスポート/Quiz for ITパスポート/main.py\" \"/Users/kamijo/MyApp/Quiz for ITパスポート/Quiz for ITパスポート/template.txt\"\n";
+		};
 		C2FE882EB1787EB2EE841012 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -315,19 +358,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B23426022848CBAE000DACB9 /* QuizViewController.swift in Sources */,
 				B2BFFC9C285043D500FCD317 /* SettingViewController.swift in Sources */,
 				B2745D1E284729D900C11CD5 /* SelectLevelCustomButton.swift in Sources */,
+				B2BFFCBB28548B9D00FCD317 /* FIledSelectButton.swift in Sources */,
 				B2BFFCA228506B3000FCD317 /* TestHomeViewController.swift in Sources */,
 				B2745D0728471CED00C11CD5 /* AppDelegate.swift in Sources */,
 				B2745D0928471CED00C11CD5 /* SceneDelegate.swift in Sources */,
 				B2342674284CFF48000DACB9 /* FieldViewController.swift in Sources */,
+				B2AE94B92854B32D00BF5995 /* ExtensionButton.swift in Sources */,
+				B2AE94C428589EAA00BF5995 /* ButtonCustom.swift in Sources */,
 				B2745D1B284727D700C11CD5 /* HomeViewController.swift in Sources */,
+				B2AE94BF2854EB7700BF5995 /* TestSelectButton.swift in Sources */,
 				B23425FC2848C88C000DACB9 /* FiledSpecificViewController.swift in Sources */,
+				B2AE94C12855E95C00BF5995 /* ExplanationViewController.swift in Sources */,
+				B2BFFCA62850AFA700FCD317 /* QuizViewController.swift in Sources */,
 				B2342643284A6ED9000DACB9 /* PrepareQuizViewController.swift in Sources */,
+				B2BFFCAA28532D8500FCD317 /* SettingDetailViewController.swift in Sources */,
 				B2342641284A509C000DACB9 /* BookMarkViewController.swift in Sources */,
 				B234263E284A199F000DACB9 /* QuizResultViewController.swift in Sources */,
 				B2BFFCA42850768A00FCD317 /* DetailDataViewController.swift in Sources */,
+				B2BFFCAC2853386E00FCD317 /* SettingDataViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +533,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -512,6 +563,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
